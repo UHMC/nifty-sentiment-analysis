@@ -3,17 +3,6 @@ Saxon Knight
 University of Hawai’i Maui College  
 University of Hawai’i at Manoa
 
-## Table of Contents
-Table of Contents	2  
-Background	3  
-Meta Information	3  
-Handout	4  
-Assignment Instructions	4  
-Sample data files	5  
-Starter and support code files	5  
-Model grading criteria	5  
-Runnable demo application	5
-
 ## Background
 Sentiment Analysis may be performed as an application of Machine Learning (ML) to large bodies of text, such as those found in large consumer review datasets, in order to determine sentiment (positive, negative, sarcastic, etc.) and gain feedback. The use of Machine Learning techniques in this endeavor allows for much larger quantities of data to be processed than would be practical for human evaluators working directly with the data. With recent advances in Machine Learning in the form of new and powerful frameworks, it is relatively simple to set up a machine to perform analysis on text in a way previously confined to the domain of common-sense, human interpretation of opinions, feelings, etc.
 
