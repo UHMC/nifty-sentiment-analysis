@@ -16,6 +16,12 @@ Sentiment Analysis may be performed as an application of Machine Learning (ML) t
 | Dependencies | TensorFlow, Keras deep learning library (included in TensorFlow), and sentiment-labelled dataset(s) (provided). |
 | Variants | Focus on file I/O, string parsing, and data massaging/preparation. |
 
+### Additional Descriptions
+
+| Assignment Description | This assignment is meant to be a hands-on example of practical machine-learning applications. |
+| Structure Description | The assignment is structured as a high-level step-by-step where the student is free to fill in the blanks, but there is functional code and usable data available from the start. |
+| How It Works Description | The generated neural net model uses special representations of words known as word embeddings to learn how they are related to sentiments indicated during training by adjusting the values in the dimensions of the word embeddings. The model may then be used to infer sentiment from arbitrary text inputs. |
+
 ## Handout
 ### Assignment Instructions
 1. If not already present, you will need to install Python (3.x preferred) and TensorFlow (GPU version recommended but not required).
