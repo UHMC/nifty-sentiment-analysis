@@ -1,17 +1,17 @@
 # Nifty Assignment - Sentiment Analysis
-	Saxon Knight
-	University of Hawai’i Maui College
-	University of Hawai’i at Manoa
+Saxon Knight  
+University of Hawai’i Maui College  
+University of Hawai’i at Manoa
 
 ## Table of Contents
-Table of Contents	2
-Background	3
-Meta Information	3
-Handout	4
-Assignment Instructions	4
-Sample data files	5
-Starter and support code files	5
-Model grading criteria	5
+Table of Contents	2  
+Background	3  
+Meta Information	3  
+Handout	4  
+Assignment Instructions	4  
+Sample data files	5  
+Starter and support code files	5  
+Model grading criteria	5  
 Runnable demo application	5
 
 ## Background
