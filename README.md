@@ -19,7 +19,7 @@ Sentiment Analysis may be performed as an application of Machine Learning (ML) t
 | Variants | Focus on file I/O, string parsing, and data massaging/preparation. |
 
 ## Handout
-###Assignment Instructions
+### Assignment Instructions
 1. If not already present, you will need to install Python (3.x preferred) and TensorFlow (GPU version recommended but not required).
     * https://www.python.org/downloads/
     * https://www.tensorflow.org/install/
