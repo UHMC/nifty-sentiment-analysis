@@ -1,92 +1,150 @@
 <!DOCTYPE html>
-<body>
-    <table>
-        <tr>
-            <th>
-                Attribute
-            </th>
-            <th>
-                Explanation
-            </th>
-        </tr>
-        <tr>
-            <td>
-                Summary
-            </td>
-            <td>
-                Sentiment Analysis -- Create and use a neural network model which is capable of inferring positive or negative sentiment from strings of coherent text.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Topics
-            </td>
-            <td>
-                File I/O, parsing text, various machine learning topics.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Audience
-            </td>
-            <td>
-                Students who are familiar with Python and interested in Machine Learning or Data Science.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Difficulty
-            </td>
-            <td>
-                This is an intermediate to advanced assignment distilled into a high-level step-by-step with room to innovate. A student familiar with the frameworks involved may finish in a day or less, while others may need to spend more time researching. A good working knowledge is well-earned and allows intuitive tuning of hyperparameters and potential implementations of more advanced mechanisms (RNNs, LSTMs, etc.) to improve performance.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Strengths
-            </td>
-            <td>
-                Introduction to an application of Machine Learning, exercises file input/output, string parsing, working with arrays, and use of third-party frameworks.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Weaknesses
-            </td>
-            <td>
-                May be difficult for the student to grasp the inner workings without introduction and overview. In the endeavor of improved performance, heavy reliance on independent research and effort to gain a working knowledge of the concepts involved.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Dependencies
-            </td>
-            <td>
-                TensorFlow, Keras deep learning library (included in TensorFlow), and sentiment-labelled dataset(s) (provided).
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Variants
-            </td>
-            <td>
-                Focus on file I/O, string parsing, and data massaging.
-            </td>
-        </tr>
-    </table>
-    <!--Assignment Description-->
-    <div name="Assignment Description">
-        <h1>Assignment Description</h1>
-        <p>This assignment is meant to be a hands-on example of practical machine-learning applications.</p>
+<!-- saved from url=(0048)https://uhmc.github.io/nifty-sentiment-analysis/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Nifty Assignment - Sentiment Analysis | nifty-sentiment-analysis</title>
+<meta name="generator" content="Jekyll v3.7.4">
+<meta property="og:title" content="Nifty Assignment - Sentiment Analysis">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://uhmc.github.io/nifty-sentiment-analysis/">
+<meta property="og:url" content="https://uhmc.github.io/nifty-sentiment-analysis/">
+<meta property="og:site_name" content="nifty-sentiment-analysis">
+<script type="application/ld+json">
+{"headline":"Nifty Assignment - Sentiment Analysis","@type":"WebSite","url":"https://uhmc.github.io/nifty-sentiment-analysis/","name":"nifty-sentiment-analysis","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="./index_files/style.css">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://uhmc.github.io/nifty-sentiment-analysis/">nifty-sentiment-analysis</a></h1>
+      
+
+      <h1 id="nifty-assignment---sentiment-analysis">Nifty Assignment - Sentiment Analysis</h1>
+
+<h2 id="background">Background<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#background" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Sentiment Analysis may be performed as an application of Machine Learning (ML) to large bodies of text, such as those found in large consumer review datasets, in order to determine sentiment (positive, negative, sarcastic, etc.) and gain feedback. The use of Machine Learning techniques in this endeavor allows for much larger quantities of data to be processed than would be practical for human evaluators working directly with the data. With recent advances in Machine Learning in the form of new and powerful frameworks, it is relatively simple to set up a machine to perform analysis on text in a way previously confined to the domain of common-sense, human interpretation of opinions, feelings, etc.</p>
+
+<h2 id="meta-information">Meta Information<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#meta-information" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Summary</td>
+      <td>Sentiment Analysis – Create and use a neural network model which is capable of inferring positive or negative sentiment from strings of coherent text.</td>
+    </tr>
+    <tr>
+      <td>Topics</td>
+      <td>File I/O, parsing text, various machine learning topics.</td>
+    </tr>
+    <tr>
+      <td>Audience</td>
+      <td>Students who are familiar with Python and interested in Machine Learning or Data Science.</td>
+    </tr>
+    <tr>
+      <td>Difficulty</td>
+      <td>This is an intermediate to advanced assignment distilled into a high-level step-by-step with room to innovate. A student familiar with the frameworks involved may finish in a day or less, while others may need to spend more time researching. A good working knowledge is well-earned and allows intuitive tuning of hyperparameters and potential implementations of more advanced mechanisms (RNNs, LSTMs, etc.) to improve performance.</td>
+    </tr>
+    <tr>
+      <td>Strengths</td>
+      <td>Introduction to an application of Machine Learning, exercises file input/output, string parsing, working with arrays, and use of third-party frameworks.</td>
+    </tr>
+    <tr>
+      <td>Weaknesses</td>
+      <td>May be difficult for the student to grasp the inner workings without introduction and overview. In the endeavor of improved performance, heavy reliance on independent research and effort to gain a working knowledge of the concepts involved.</td>
+    </tr>
+    <tr>
+      <td>Dependencies</td>
+      <td>TensorFlow, Keras deep learning library (included in TensorFlow), and sentiment-labelled dataset(s) (provided).</td>
+    </tr>
+    <tr>
+      <td>Variants</td>
+      <td>Focus on file I/O, string parsing, and data massaging/preparation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="additional-descriptions">Additional Descriptions<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#additional-descriptions" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Assignment Description</td>
+      <td>This assignment is meant to be a hands-on example of practical machine-learning applications.</td>
+    </tr>
+    <tr>
+      <td>Structure Description</td>
+      <td>The assignment is structured as a high-level step-by-step where the student is free to fill in the blanks, but there is functional code and usable data available from the start.</td>
+    </tr>
+    <tr>
+      <td>How It Works Description</td>
+      <td>The generated neural net model uses special representations of words known as word embeddings to learn how they are related to sentiments indicated during training by adjusting the values in the dimensions of the word embeddings. The model may then be used to infer sentiment from arbitrary text inputs.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="handout">Handout<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#handout" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<h3 id="assignment-instructions">Assignment Instructions<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#assignment-instructions" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<ol>
+  <li>If not already present, you will need to install Python (3.x preferred) and TensorFlow (GPU version recommended but not required).
+    <ul>
+      <li>https://www.python.org/downloads/</li>
+      <li>https://www.tensorflow.org/install/</li>
+    </ul>
+  </li>
+  <li>Select one or more datasets to train on from any source available. The goal is to find a mapping from pieces of text to a kind of sentiment (binary [0 negative, 1 positive] is ideal). The IMDb, Amazon, and Yelp review datasets are a great choice.
+    <ul>
+      <li>http://ai.stanford.edu/~amaas/data/sentiment/</li>
+      <li>https://s3.amazonaws.com/amazon-reviews-pds/readme.html</li>
+      <li>https://www.yelp.com/dataset</li>
+    </ul>
+  </li>
+  <li>Massage the datasets into a consistent format so that your program may easily read them in (e.g. datum<tab>label<newline>).</newline></tab></li>
+  <li>Load in the datasets (data and labels) from the massaged data/label files.</li>
+  <li>Separate and store the data and labels into arrays, (or other appropriate data type).</li>
+  <li>Optionally make helper functions to clean up the data for use (remove artifacts such as numeric codes and the like) (note: this can be part of massaging/preparation).</li>
+  <li>Build your neural net model.
+    <ol>
+      <li>A relatively straightforward word2vec based approach may use the Keras library (included with TensorFlow). To do so, you will need to create a unique vocabulary list from the data (pieces of text) and associate each word in the vocabulary list with a numeric ID (the index of the word in the final list/array should work fine). Also consider including a special value for unknown words (words not present in the vocabulary list) that may be encountered when you attempt inference on arbitrary input.</li>
+      <li>Prepare data and labels for training: encode the text data into numeric IDs and pad the sequences (each sentence or so) so they all have the same length (Keras has helper functions for this).</li>
+    </ol>
+  </li>
+  <li>Train your model.</li>
+  <li>Make a function to use your model for inference on input.</li>
+  <li>Test it out on some arbitrary statements with known or intended sentiment.</li>
+  <li>Play around with hyperparameters to see if you can improve performance accuracy.</li>
+  <li>Add fancy graphics (e.g. for training/validation) if you’re into that.</li>
+</ol>
+
+<h2 id="sample-data-files">Sample data files<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#sample-data-files" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Data used for this assignment may vary, but for a successful attempt at inference on sentiments, datasets which are used should be well curated and have many examples for the neural net model to learn from. Some examples are the IMDb, Amazon, and Yelp reviews datasets. The <a href="https://www.kaggle.com/marklvl/sentiment-labelled-sentences-data-set/version/2#">datasets</a> included in this assignment are a combination of those, which was originally for a paper by Kotzias et. al.</p>
+
+<h2 id="starter-and-support-code-files">Starter and support code files<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#starter-and-support-code-files" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Starter / support code for this assignment is available in the GitHub <a href="https://github.com/UHMC/nifty-sentiment-analysis">repository</a>.</p>
+
+<h2 id="model-grading-criteria">Model grading criteria<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#model-grading-criteria" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Upon successful completion of this assignment, the student’s program should demonstrate reasonable accuracy in determining the sentiment (positive, negative) of a statement similar to those used in the training datasets. Getting far enough to perform any inference at all, whether or not it is accurate, still demonstrates a level of competence in file input/output, string parsing, mapping of one datatype to another using arrays or other data types, use of third-party frameworks, and a reasonable effort. In some cases, all that is necessary to improve performance is the tuning of the neural network model hyperparameters (number of hidden neurons, dimensionality of word embeddings, etc.).</p>
+
+<h2 id="runnable-demo-application">Runnable demo application<a class="anchorjs-link " href="https://uhmc.github.io/nifty-sentiment-analysis/#runnable-demo-application" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>A runnable demo application is available in the GitHub <a href="https://github.com/UHMC/nifty-sentiment-analysis">repository</a>.</p>
+
+
+      
     </div>
-    <!--Structure Description-->
-    <div name="Structure Description">
-        <h1>Structure Description</h1>
-        <p>The assignment is structured as a high-level step-by-step where the student is free to fill in the blanks, but there is functional code and usable data available from the start.</p>
-    </div>
-    <!--How It Works Description-->
-    <div name="How It Works Description">
-        <h1>How It Works Description</h1>
-        <p></p>
-    </div>
-</body>
+    <script src="./index_files/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  
+
+</body></html>
